@@ -90,7 +90,8 @@ USE SCHEMA SANDBOX_DB.PUBLIC;
       
       if (UC > 0) then
         CREATE OR REPLACE ROLE identifier(:new_role);
-        GRANT ROLE identifier(:new_role) TO USER identifier(:nuid) ;    
+        GRANT ROLE identifier(:new_role) TO USER identifier(:nuid) ;   
+        GRANT ROLE "SANDBOX_ROLE" TO ROLE identifier(:new_role) ;
         return :new_role || ' role is created';
       else
         return 'No user found';
