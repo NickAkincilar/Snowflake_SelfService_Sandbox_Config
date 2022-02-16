@@ -27,7 +27,7 @@ Following Script creates a Self service Sandbox enviroment within Snowflake wher
 -- identified via SNOWFLAKE.ACCOUNT_USAGE.ACCESS_HISTORY (Enterprise edition & above) and be automatically removed.
 -- 
 
-
+-- ************ RUN THIS TO CREATE THE FRAMEWORK *******
 
 USE ROLE SYSADMIN;
 
@@ -137,6 +137,7 @@ create or replace procedure ADD_SANDBOX_USER(user_name varchar)
   
  
  
+ -- ************ ONCE THE FRAMEWORK IS CONFIGURED, USE THE FOLLOWING TO ENROLL USERS & REMOVE UNUSED DATA *******
  
  --- EXECUTE FOLLOWING TO ENROLL A USER INTO THE SANDBOX ENVIRONMENT ( Creates a dedicated schema & a role for this user) 
  --- USER ID IS CASE SENSITIVE
