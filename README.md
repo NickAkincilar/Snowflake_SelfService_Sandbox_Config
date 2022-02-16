@@ -1,5 +1,8 @@
 # Snowflake SelfService Sandbox Configuration.
 
+![alt text](https://github.com/NickAkincilar/Snowflake_SelfService_Sandbox_Config/blob/6db947f2051f52262c8cdae0fd421c40a5fd3ffc/Diagram.png)
+
+
 Following Script creates a Self service Sandbox enviroment within Snowflake where users gain access to unique schemas where they have full rights to upload, create, modify & delete their data objects but restricted in terms of sharing their content with others. Part of this setup is also to grant them read-only access to other governed datasets within the account for them to join their own data.
 
 ``` sql
